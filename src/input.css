@@ -288,20 +288,32 @@
           transform: translateY(5px);
 }
 
+/* @media (max-width: 1170px) {
+  .header {
+    padding: 0 15px !important;
+  }
+} */
+
 @media (max-width: 992px) {
-  .header-center {
+  /* .header {
+    padding: 0 15px !important;
+  } */
+  /* .header-center {
     padding-left: 15px !important;
   }
 
   .js-menu-bar {
     padding-right: 15px !important;
-  }
+  } */
 }
 
 
 /* banner area */
 .home-banner {
   background-position: inherit;
+}
+.home-banner {
+  background: linear-gradient(to right, rgba(57, 86, 99, 0.7), rgba(83, 68, 98, 0.7)), url('../images/home/banner.jpg') no-repeat center center / cover;
 }
 .banner-title {
   font-size:clamp(2.8rem, 10vw, 6.25rem);
@@ -310,7 +322,7 @@
   font-size:clamp(2.2rem, 4vw, 3.125rem);
 }
 .section-text{
-  font-size:clamp(1.8rem, 3vw, 2.25rem);
+  font-size:clamp(1.5rem, 3vw, 2.25rem);
 }
 @media (max-width: 1278px) {
   .home-shape-1 {
@@ -329,17 +341,25 @@
 }
 
 /* slider area */
+.home-slider .swiper-wrapper .swiper-slide {
+  transition-timing-function: linear !important;
+}
+
 .slide-1 {
   background: linear-gradient(to right, rgba(57, 86, 99, 0.7), rgba(83, 68, 98, 0.7)), url('../images/slider/slider-1.jpg') no-repeat center center / cover;
+  /* transition: 0.3s ease all; */
 }
 .slide-2 {
   background: linear-gradient(to right, rgba(57, 86, 99, 0.7), rgba(83, 68, 98, 0.7)), url('../images/slider/slider-2.jpg') no-repeat center center / cover;
+  /* transition: 0.3s ease all; */
 }
 .slide-3 {
   background: linear-gradient(to right, rgba(57, 86, 99, 0.7), rgba(83, 68, 98, 0.7)), url('../images/slider/slider-3.jpg') no-repeat center center / cover;
+  /* transition: 0.3s ease all; */
 }
 .slide-4 {
   background: linear-gradient(to right, rgba(57, 86, 99, 0.7), rgba(83, 68, 98, 0.7)), url('../images/slider/slider-4.jpg') no-repeat center center / cover;
+  /* transition: 0.3s ease all; */
 }
 /* .slide-4 {
   background: linear-gradient(to right, rgba(135, 150, 158, 0.4), rgba(152, 133, 155, 0.4)), url('../images/slider/slider-4.jpg') no-repeat center center / cover;

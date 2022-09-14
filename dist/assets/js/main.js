@@ -12,9 +12,9 @@
         //   crossFade: true
         // },
         loop: true,
-        speed: 2500,
+        speed: 500,
         // autoplay: {
-        //   delay: 2500,
+        //   delay: 3500,
         //   disableOnInteraction: true,
         // },
         pagination: {
