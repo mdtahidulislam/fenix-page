@@ -13,22 +13,22 @@
         // },
         loop: true,
         speed: 500,
-        // autoplay: {
-        //   delay: 3500,
-        //   disableOnInteraction: true,
-        // },
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: true,
+        },
         pagination: {
           el: ".swiper-pagination",
           type: "bullets",
           clickable: true,
         },
       });
-      // $(".home-slider").mouseenter(function () {
-      //   swiper.autoplay.stop();
-      // });
-      // $(".home-slider").mouseleave(function () {
-      //   swiper.autoplay.start();
-      // });
+      $(".home-slider").mouseenter(function () {
+        swiper.autoplay.stop();
+      });
+      $(".home-slider").mouseleave(function () {
+        swiper.autoplay.start();
+      });
 
       // menu 
       $('.js-menu-bar').on('click', function() {

@@ -442,6 +442,13 @@
   }
 }
 
+/* contact form */
+.fenix-input {
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, #7f654a, #9a836f,  #7f654a);
+  border-image-slice: 1;
+}
+
 @media (min-width: 768.5px) {
   .fenix-input::placeholder {
     color: transparent !important;
