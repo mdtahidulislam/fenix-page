@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo/favicon.ico" />
+    <title>Fenix</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/swiper.min.css">
+</head>
+<body>
+    <header class="header px-[6.25vw] absolute w-full z-[999] mt-[35px] fourk:max-w-[2100px] fourk:left-[50%] fourk:-translate-x-[50%] fourkxl:px-[0.5vw] maxdp:px-[15px]">
+        <div class="header-inner flex items-center justify-between">
+            <div class="header-left maxdp:hidden"> 
+                <nav>
+                    <ul class="flex -mx-[var(--menu-item-space-x)]">
+                        <li class="group"><a href="#media" class="font-gothamlight font-normal text-[20px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[15px] maxlg:after:h-[24px]">Media</a></li>
+                        <li class="group"><a href="#team" class="font-gothamlight font-normal text-[20px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[15px] maxlg:after:h-[24px]">Our Team</a></li>
+                        <li class="group"><a href="#membership" class="font-gothamlight font-normal text-[20px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[15px] maxlg:after:h-[24px]">Membership</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-center  fourksm:mr-0">
+                <div class="header-logo w-[21.5vw] maxsm:w-[150px]">
+                    <a href="/" class="block">
+                        <img class="w-full" src="./assets/images/logo/logo.svg" alt="Fenix">
+                    </a>
+                </div>
+            </div>
+            <div class="header-right maxdp:hidden">
+                <nav class="maxdp:mb-[5px]">
+                    <ul class="flex -mx-[var(--menu-item-space-x)]">
+                        <li class="group"><a href="events.html" class="font-gothamlight font-normal text-[20px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[15px] maxlg:after:h-[24px]">Events</a></li>
+                        <li class="group"><a href="#mission" class="font-gothamlight font-normal text-[20px] text-white1  px-[var(--menu-item-space-x)] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[15px] maxlg:after:h-[24px]">Our Mission</a></li>
+                        <li class="group"><a href="#contact" class="font-gothamlight font-normal text-[20px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[15px] maxlg:after:h-[24px]">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="js-menu-bar hidden maxdp:block">
+                <svg height="25px" version="1.1" viewBox="0 0 25 25" width="25px"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="TabBar-Icons" stroke="none" stroke-width="1"><g fill="#a78960" id="Hamburger"><path d="M0,2 L25,2 L25,6 L0,6 L0,2 Z M0,10 L25,10 L25,14 L0,14 L0,10 Z M0,18 L25,18 L25,22 L0,22 L0,18 Z"/></g></g></svg>
+            </div>
+        </div>
+        
+        <!-- mobile menu -->
+        <div class="mobile-menu js-mobile-menu flex justify-center items-center fixed inset-0 bg-white w-full h-full overflow-y-auto opacity-0 invisible">
+            <div class="mobile-menu-close js-mobile-menu-close fixed top-[15px] right-[15px]">
+                <svg width="22px" data-name="Layer 1" id="Layer_1" viewBox="0 0 64 64"><title/><path fill="#a78960" d="M8.25,0,32,23.75,55.75,0,64,8.25,40.25,32,64,55.75,55.75,64,32,40.25,8.25,64,0,55.75,23.75,32,0,8.25Z" data-name="&lt;Compound Path&gt;" id="_Compound_Path_"/></svg>
+            </div>
+            <nav class="w-screen h-screen">
+                <ul class="mobile-menu-items js-mobile-menu-items w-screen h-screen flex flex-col justify-center items-center">
+                    <li><a href="#mission" class="font-gothammedium font-normal text-[20px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Our Mission</a></li>
+                    <li><a href="#team" class="font-gothammedium font-normal text-[20px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Our Team</a></li>
+                    <li><a href="#membership" class="font-gothammedium font-normal text-[20px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Membership</a></li>
+                    <li><a href="events.html" class="font-gothammedium font-normal text-[20px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Events</a></li>
+                    <li><a href="#media" class="font-gothammedium font-normal text-[20px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Media</a></li>
+                    <li><a href="#contact" class="font-gothammedium font-normal text-[20px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- start hero -->
+        <section class="home-banner relative min-h-screen maxmd:h-auto">
+            <!-- <div class="absolute inset-0 w-full h-full bg-black opacity-[.6]"></div> -->
+            <div class="banner-content px-[6.25vw] pt-[311px] relative fourksm:min-h-screen fourksm:pt-[28vw] maxdp:px-[15px] maxmd:pt-[250px]">
+                <h1 class="banner-title font-luxiadisplay text-gold2 text-center leading-[5.6rem] mb-[52px] fourksm:mb-[100px] maxdp:leading-none maxmd:mb-[90px]">Coming soon</h1>
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/flowbite.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
