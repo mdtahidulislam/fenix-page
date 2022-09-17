@@ -313,7 +313,7 @@
   background-position: inherit;
 }
 .home-banner {
-  background: linear-gradient(to right, rgba(57, 86, 99, 1), rgba(83, 68, 98, 1)), url('../images/home/banner.jpg') no-repeat center center / cover;
+  background: linear-gradient(to right, rgba(57, 86, 99, 0.7), rgba(83, 68, 98, 0.7)), url('../images/home/banner.jpg') no-repeat center center / cover;
 }
 .banner-title {
   font-size:clamp(2.8rem, 10vw, 6.25rem);
@@ -473,6 +473,19 @@
 }
 
 
+/* events page */
+.events-banner-bg {
+  background: linear-gradient(to right, rgba(57, 86, 99, 1), rgba(83, 68, 98, 1));
+}
+
+/* membership page */
+.membership-banner-bg {
+  background: linear-gradient(to right, rgba(57, 86, 99, 1), rgba(83, 68, 98, 1));
+}
+
+.membership-section-text {
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+}
 
 
 

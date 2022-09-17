@@ -13,22 +13,22 @@
         // },
         loop: true,
         speed: 500,
-        // autoplay: {
-        //   delay: 3500,
-        //   disableOnInteraction: true,
-        // },
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: true,
+        },
         pagination: {
           el: ".swiper-pagination",
           type: "bullets",
           clickable: true,
         },
       });
-      // $(".home-slider").mouseenter(function () {
-      //   swiper.autoplay.stop();
-      // });
-      // $(".home-slider").mouseleave(function () {
-      //   swiper.autoplay.start();
-      // });
+      $(".home-slider").mouseenter(function () {
+        swiper.autoplay.stop();
+      });
+      $(".home-slider").mouseleave(function () {
+        swiper.autoplay.start();
+      });
 
       // menu 
       $('.js-menu-bar').on('click', function() {
@@ -49,30 +49,27 @@
         $('.js-mobile-menu').removeClass('open');
       });
       
-      
-      // const tabelements = [
-      //   {
-      //     id: 'monthTab',
-      //     triggerEl: $('#month-tab'),
-      //     targetEl: $('#month')
-      //   },
-      //   {
-      //     id: 'yearTab',
-      //     triggerEl: $('#year-tab'),
-      //     targetEl: $('#year')
-      //   }
-      // ]
-      // const options = {
-      //   defaultTabId: 'yearTab',
-      //   activeClasses: 'text-red-600',
-      //   inactiveClasses: 'text-gray-500 ',
-      //   onShow: () => {
-      //     console.log('tab is shown');
-      //   }
-      // }
-      // const tabs = new Tabs(tabelements, options);
-      // tabs.show('yearTab');
+      $(".js-header a").on('click', function(event) {
 
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+          $('.js-mobile-menu').removeClass('open');
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+      
     });
 
 }(jQuery));

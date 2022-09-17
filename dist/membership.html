@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo/favicon.ico" />
+    <title>Fenix</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/swiper.min.css">
+</head>
+<body>
+    <header class="header js-header px-[6.25vw] absolute w-full z-[999] mt-[35px] fourk:max-w-[2100px] fourk:left-[50%] fourk:-translate-x-[50%] fourkxl:px-[0.5vw] maxdp:px-[15px]">
+        <div class="header-inner flex items-center justify-between">
+            <div class="header-left maxdp:hidden"> 
+                <nav>
+                    <ul class="flex -mx-[var(--menu-item-space-x)]">
+                        <li class="group"><a href="#media" class="font-gothamlight font-normal text-[20px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[15px] maxlg:after:h-[24px]">Media</a></li>
+                        <li class="group"><a href="#team" class="font-gothamlight font-normal text-[20px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[15px] maxlg:after:h-[24px]">Our Team</a></li>
+                        <li class="group"><a href="membership.html" class="font-gothamlight font-normal text-[20px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[15px] maxlg:after:h-[24px]">Membership</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-center  fourksm:mr-0">
+                <div class="header-logo w-[21.5vw] maxsm:w-[150px]">
+                    <a href="/" class="block">
+                        <img class="w-full" src="./assets/images/logo/logo.svg" alt="Fenix">
+                    </a>
+                </div>
+            </div>
+            <div class="header-right maxdp:hidden">
+                <nav class="maxdp:mb-[5px]">
+                    <ul class="flex -mx-[var(--menu-item-space-x)]">
+                        <li class="group"><a href="events.html" class="font-gothamlight font-normal text-[20px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[15px] maxlg:after:h-[24px]">Events</a></li>
+                        <li class="group"><a href="#mission" class="font-gothamlight font-normal text-[20px] text-white1  px-[var(--menu-item-space-x)] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[15px] maxlg:after:h-[24px]">Our Mission</a></li>
+                        <li class="group"><a href="#contact" class="font-gothamlight font-normal text-[20px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[15px] maxlg:after:h-[24px]">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="js-menu-bar hidden maxdp:block">
+                <svg height="25px" version="1.1" viewBox="0 0 25 25" width="25px"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="TabBar-Icons" stroke="none" stroke-width="1"><g fill="#a78960" id="Hamburger"><path d="M0,2 L25,2 L25,6 L0,6 L0,2 Z M0,10 L25,10 L25,14 L0,14 L0,10 Z M0,18 L25,18 L25,22 L0,22 L0,18 Z"/></g></g></svg>
+            </div>
+        </div>
+        
+        <!-- mobile menu -->
+        <div class="mobile-menu js-mobile-menu flex justify-center items-center fixed inset-0 bg-white w-full h-full overflow-y-auto opacity-0 invisible">
+            <div class="mobile-menu-close js-mobile-menu-close fixed top-[15px] right-[15px]">
+                <svg width="22px" data-name="Layer 1" id="Layer_1" viewBox="0 0 64 64"><title/><path fill="#a78960" d="M8.25,0,32,23.75,55.75,0,64,8.25,40.25,32,64,55.75,55.75,64,32,40.25,8.25,64,0,55.75,23.75,32,0,8.25Z" data-name="&lt;Compound Path&gt;" id="_Compound_Path_"/></svg>
+            </div>
+            <nav class="w-screen h-screen">
+                <ul class="mobile-menu-items js-mobile-menu-items w-screen h-screen flex flex-col justify-center items-center">
+                    <li><a href="#mission" class="font-gothammedium font-normal text-[20px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Our Mission</a></li>
+                    <li><a href="#team" class="font-gothammedium font-normal text-[20px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Our Team</a></li>
+                    <li><a href="membership.html" class="font-gothammedium font-normal text-[20px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Membership</a></li>
+                    <li><a href="events.html" class="font-gothammedium font-normal text-[20px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Events</a></li>
+                    <li><a href="#media" class="font-gothammedium font-normal text-[20px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Media</a></li>
+                    <li><a href="#contact" class="font-gothammedium font-normal text-[20px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- start hero -->
+        <section class="membership-banner bg-gradient-to-b from-[#201e3b] to-[#350937] relative min-h-screen maxmd:h-auto">
+            <!-- <div class="absolute inset-0 w-full h-full bg-black opacity-[.6]"></div> -->
+            <div class="banner-content px-[6.25vw] pt-[311px] relative fourksm:min-h-screen fourksm:pt-[28vw] maxdp:px-[15px] maxmd:pt-[250px]">
+                <h1 class="banner-title font-gothamlight text-gold2 text-center leading-[5.6rem] mb-[52px] fourksm:mb-[100px] maxdp:leading-none maxmd:mb-[90px]"><span class="font-luxiaregular">Membership</span></h1>
+            </div>
+        </section>
+        <!-- end hero -->
+        <!-- start mission -->
+        <section class="membership-about py-[200px] bg-gradient-to-t from-[#201e3b] to-[#350937] relative fourkm:py-[250px] maxlg:py-[150px] maxmd:py-[90px]">
+                <div class="home-shape-1 absolute -top-[13vw] left-0 fourksm:-top-[8vw]">
+                    <img src="./assets/images/shape/shape-1_1.png" alt="Image">
+                </div>
+                <div class="home-shape-2 absolute -top-[6.5vw] right-0 fourksm:-top-[4vw]">
+                    <img src="./assets/images/shape/shape-2_1.png" alt="Image">
+                </div>
+            <div class="inner-area px-[6.25vw] maxdp:px-[15px] relative">
+                <div class="section-content max-w-[59.3755vw] mx-auto fourkm:max-w-[800px] maxsm:max-w-full">
+                    <p class="section-text font-gothamlight text-white1 text-center leading-[1.2]">Fenix is a member-only network to advance <span class="font-luxiaregular">Asian American Women (AAW)</span>  in the investment management industry. Members include senior investment managers and is by invitation only.</p>
+                    
+                </div>
+            </div>
+            
+            <div class="flex justify-center gap-[20px] mt-[50px] px-[6.25vw] maxdp:px-[15px] maxsm:flex-col maxsm:items-center maxsm:gap-0">
+                <div>
+                    <p class="membership-section-text font-gothamlight text-white1  leading-[1.2] maxsm:text-center">General Partner <br> Managing Partner <br>Principal <br>Chief Investment Office  </p>
+                </div>
+                <div>
+                    <p class="membership-section-text font-gothamlight text-white1  leading-[1.2] maxsm:text-center">Managing Director <br>Director <br>Vice President <br>Head of Investments</p>
+                </div>
+            </div>
+        </section>
+        <!-- end mission -->
+        <section class="membership-benifits pt-[100px] bg-gradient-to-b from-[#201e3b] to-[#350937]">
+            <div class="inner-area px-[6.25vw] relative maxdp:px-[15px]">
+                <div class="home-shape-5 absolute top-0 left-0 maxlg:w-[15vw]">
+                    <img src="./assets/images/shape/shape-5_3.png" alt="Image">
+                </div>
+                <div class="benifits-area pb-[213px] maxsm:pb-[150px]">
+                    <div class="section-header text-center">
+                        <h1 class="section-title inline-block font-luxiaregular text-gold2 uppercase leading-10 text-center tracking-[4px] pb-[7px] mb-[75px] relative after:absolute after:w-full after:h-[2px] after:left-[50%] after:-translate-x-[50%] after:bottom-0 after:rounded after:bg-gradient-to-l from-[#7f654a] via-[#9a836f] to-[#7f654a]">Benefits</h1>
+                    </div>
+                    <div class="section-content max-w-[59.3755vw] mx-auto pb-[147px] maxlg:pb-[100px] maxmd:pb-[70px] maxsm:max-w-full">
+                        <ul>
+                            <li class="section-text font-gothamlight text-white1 leading-[1.2] pl-[20px] mb-[20px] relative before:absolute before:top-[8px] before:left-0 before:w-[10px] before:h-[10px] before:rounded-full before:bg-gold1">Investor Networking.  Institutional, Family Offices, and High Net Worth Individuals supporting women led funds.</li>
+                            <li class="section-text font-gothamlight text-white1 leading-[1.2] pl-[20px] mb-[20px] relative before:absolute before:top-[8px] before:left-0 before:w-[10px] before:h-[10px] before:rounded-full before:bg-gold1">Executive Advancement.  C-Suite and board seat opportunities.</li>
+                            <li class="section-text font-gothamlight text-white1 leading-[1.2] pl-[20px] mb-[20px] relative before:absolute before:top-[8px] before:left-0 before:w-[10px] before:h-[10px] before:rounded-full before:bg-gold1">Fenix Circles.  Intimate events with other high performing AAW Investment managers.</li>
+                            <li class="section-text font-gothamlight text-white1 leading-[1.2] pl-[20px] mb-[20px] relative before:absolute before:top-[8px] before:left-0 before:w-[10px] before:h-[10px] before:rounded-full before:bg-gold1">Executive Coaching.  Executive coaching to achieve next level performance.</li>
+                            <li class="section-text font-gothamlight text-white1 leading-[1.2] pl-[20px] mb-[20px] relative before:absolute before:top-[8px] before:left-0 before:w-[10px] before:h-[10px] before:rounded-full before:bg-gold1">Fen-Well Programs.  Programming on topics impacting a woman's career, health, and wellness.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="home-shape-6 absolute -bottom-[2.9vw] right-0 maxlg:w-[34vw] maxlg:-bottom-[5vw] maxmd:bottom-0">
+                    <img src="./assets/images/shape/shape-6_2.png" alt="Image">
+                </div>
+            </div>
+            <div class="inner-area px-[6.25vw] relative maxdp:px-[15px]">
+                <div class="relative">
+                    <div class="section-header text-center">
+                        <h1 class="section-title inline-block font-luxiaregular text-gold2 uppercase leading-10 text-center tracking-[4px] pb-[7px] mb-[60px] relative after:absolute after:w-full after:h-[2px] after:left-[50%] after:-translate-x-[50%] after:bottom-0 after:rounded after:bg-gradient-to-l from-[#7f654a] via-[#9a836f] to-[#7f654a]">Contact Us</h1>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <p class="section-text font-gothamlight text-center text-white1 leading-[1.2]">Contact our Membership team at <a class="whitespace-nowrap hover:text-gold1 duration-300" href="mailto:info@fenixwoman.com">info@fenixwoman.com</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="home-shape-8 relative bottom-0 left-0 -mb-[18px]">
+                <img src="./assets/images/shape/shape-8_1.png" alt="Image">
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/flowbite.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
