@@ -31,6 +31,28 @@
       });
 
       // menu 
+
+      $(window).scroll(function(){
+        if ($(this).scrollTop() > 35) {
+            $('.js-header').removeClass('absolute').addClass('fixed mt-0 py-[32px] bg-gradient-to-r from-[#15333F] to-[#3E1238]');
+            $('.js-logo').hide();
+            $('.js-text-logo').show();
+            
+            // $('.js-text-logo').addClass('text-logo-anim');
+            
+            
+        } else {
+            $('.js-header').removeClass('fixed mt-0 py-[32px] bg-gradient-to-r from-[#15333F] to-[#3E1238]').addClass('absolute');
+            // $('.js-text-logo').removeClass('text-logo-anim');
+            // $('.js-logo').removeClass('logo-anim');
+            // $('.js-text-logo').removeClass('text-logo-anim');
+            $('.js-logo').show();
+            $('.js-text-logo').hide();
+        }
+      });
+
+
+
       $('.js-menu-bar').on('click', function() {
         $('.js-header-left').toggle();
         $('.js-header-right').toggle();
@@ -50,7 +72,7 @@
       });
       
       $(".js-header a").on('click', function(event) {
-
+        console.log($('.js-header').height())
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
           event.preventDefault();
@@ -61,9 +83,8 @@
           // Using jQuery's animate() method to add smooth page scroll
           // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
           $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-       
+            scrollTop: $(hash).offset().top - $('.js-header').outerHeight()
+          }, {duration: 500, easing: "linear" }, function(){
             // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
           });

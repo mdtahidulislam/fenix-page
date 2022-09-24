@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./assets/css/swiper.min.css">
 </head>
 <body>
-    <header class="header js-header px-[6.25vw] absolute w-full z-[999] mt-[35px] fourk:max-w-[2100px] fourk:left-[50%] fourk:-translate-x-[50%] fourkxl:px-[0.5vw] maxdp:px-[15px]">
+    <header class="header js-header px-[6.25vw] absolute w-full z-[999] mt-[35px] fourk:max-w-[2100px] fourk:left-[50%] fourk:-translate-x-[50%] fourkxl:px-[0.5vw] maxdp:px-[15px] transition-transform duration-75">
         <div class="header-inner flex items-center justify-between">
             <div class="header-left maxdp:hidden"> 
                 <nav>
@@ -22,16 +22,17 @@
                 </nav>
             </div>
             <div class="header-center  fourksm:mr-0">
-                <div class="header-logo w-[21.5vw] maxsm:w-[150px]">
+                <div class="header-logo js-header-logo w-[21.5vw] maxsm:w-[150px]">
                     <a href="/" class="block">
-                        <img class="w-full" src="./assets/images/logo/logo.svg" alt="Fenix">
+                        <img class="w-full js-logo" src="./assets/images/logo/logo.svg" alt="Fenix">
+                        <img class="max-w-[15.3vw] mx-auto hidden js-text-logo maxdp:max-w-full" src="./assets/images/logo/fenix-text-logo.svg" alt="Fenix">
                     </a>
                 </div>
             </div>
             <div class="header-right maxdp:hidden">
                 <nav class="maxdp:mb-[5px]">
                     <ul class="flex -mx-[var(--menu-item-space-x)]">
-                        <li class="group"><a href="events.html" class="font-gothamlight font-normal text-[20px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[15px] maxlg:after:h-[24px]">Events</a></li>
+                        <li class="group"><a href="#events" class="font-gothamlight font-normal text-[20px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[15px] maxlg:after:h-[24px]">Events</a></li>
                         <li class="group"><a href="#mission" class="font-gothamlight font-normal text-[20px] text-white1  px-[var(--menu-item-space-x)] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[15px] maxlg:after:h-[24px]">Our Mission</a></li>
                         <li class="group"><a href="#contact" class="font-gothamlight font-normal text-[20px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[15px] maxlg:after:h-[24px]">Contact</a></li>
                     </ul>
@@ -43,7 +44,7 @@
         </div>
         
         <!-- mobile menu -->
-        <div class="mobile-menu js-mobile-menu flex justify-center items-center fixed inset-0 bg-white w-full h-full overflow-y-auto opacity-0 invisible">
+        <div class="mobile-menu js-mobile-menu flex justify-center items-center fixed inset-0 bg-white w-full h-full overflow-y-auto opacity-0 invisible bg-gradient-to-b from-[#15333F] to-[#3E1238]">
             <div class="mobile-menu-close js-mobile-menu-close fixed top-[15px] right-[15px]">
                 <svg width="22px" data-name="Layer 1" id="Layer_1" viewBox="0 0 64 64"><title/><path fill="#a78960" d="M8.25,0,32,23.75,55.75,0,64,8.25,40.25,32,64,55.75,55.75,64,32,40.25,8.25,64,0,55.75,23.75,32,0,8.25Z" data-name="&lt;Compound Path&gt;" id="_Compound_Path_"/></svg>
             </div>
@@ -52,7 +53,7 @@
                     <li><a href="#mission" class="font-gothammedium font-normal text-[20px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Our Mission</a></li>
                     <li><a href="#team" class="font-gothammedium font-normal text-[20px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Our Team</a></li>
                     <li><a href="membership.html" class="font-gothammedium font-normal text-[20px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Membership</a></li>
-                    <li><a href="events.html" class="font-gothammedium font-normal text-[20px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Events</a></li>
+                    <li><a href="#events" class="font-gothammedium font-normal text-[20px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Events</a></li>
                     <li><a href="#media" class="font-gothammedium font-normal text-[20px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Media</a></li>
                     <li><a href="#contact" class="font-gothammedium font-normal text-[20px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Contact</a></li>
                 </ul>
@@ -218,6 +219,7 @@ and executive advancement opportunities.
             </div>
         </section>
         <!-- end slider -->
+        
         <!-- start about-contact -->
         <section id="team" class="abt-contact pt-[100px] bg-gradient-to-b from-[#201e3b] to-[#350937]">
             <div class="inner-area px-[6.25vw] relative maxdp:px-[15px]">
@@ -268,6 +270,16 @@ and executive advancement opportunities.
                 </div>
                 <div class="home-shape-6 absolute -bottom-[11.9vw] right-0 maxlg:w-[34vw] maxlg:-bottom-[5vw] maxmd:bottom-0">
                     <img src="./assets/images/shape/shape-6_2.png" alt="Image">
+                </div>
+            </div>
+            <div id="events" class="events bg-gradient-to-b from-[#3E1238] to-[#5E2558] pt-[75px] pb-[70px]">
+                <div class="inner-area">
+                    <div class="section-header text-center">
+                        <h1 class="section-title inline-block font-luxiaregular text-gold2 uppercase leading-10 text-center tracking-[4px] pb-[7px] mb-[35px] relative after:absolute after:w-full after:h-[2px] after:left-[50%] after:-translate-x-[50%] after:bottom-0 after:rounded after:bg-gradient-to-l from-[#7f654a] via-[#9a836f] to-[#7f654a]">Events</h1>
+                    </div>
+                    <div>
+                        <p class="font-luxiadisplay text-[25px] text-gold2 text-center leading-none">Coming soon</p>
+                    </div>
                 </div>
             </div>
             <div class="inner-area px-[6.25vw] relative maxdp:px-[15px]">
