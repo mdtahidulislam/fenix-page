@@ -72,7 +72,6 @@
       });
       
       $(".js-header a").on('click', function(event) {
-        console.log($('.js-header').height())
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
           event.preventDefault();

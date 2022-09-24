@@ -465,6 +465,16 @@
   }
 }
 
+/* membership area */
+.membership-bg {
+  background-position: inherit;
+  background: linear-gradient(to right, rgba(57, 86, 99, 0.7), rgba(83, 68, 98, 0.7)), url(../images/home/membership.jpg) no-repeat center center / cover;
+}
+
+.bg-gradient-bullet-list li:before {
+  background: linear-gradient(to right, #AB8957, #BFA176, #CFB693, #CEAD80, #CEA66D)
+}
+
 /* contact form */
 .fenix-input {
   border-bottom: 2px solid transparent;

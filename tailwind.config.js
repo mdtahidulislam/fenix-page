@@ -28,6 +28,7 @@ module.exports = {
           'slider-bg-2': "url('../images/slider/slider-2.jpeg')",
           'slider-bg-3': "url('../images/slider/slider-3.jpeg')",
           'slider-bg-4': "url('../images/slider/slider-4.jpeg')",
+          'membership-bg': "url('../images/home/membership.jpg')",
         },
         screens: {
           fourkxl: {'min': '2500px'},
