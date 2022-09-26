@@ -34,7 +34,7 @@
 
       $(window).scroll(function(){
         if ($(this).scrollTop() > 35) {
-            $('.js-header').removeClass('absolute').addClass('fixed !mt-0 py-[32px] bg-gradient-to-r from-[#15333F] to-[#3E1238]');
+            $('.js-header').removeClass('absolute').addClass('fixed !mt-0 py-[33px] bg-gradient-to-r from-[#15333F] to-[#3E1238]');
             $('.js-logo').hide();
             $('.js-text-logo').show();
             
@@ -42,7 +42,7 @@
             
             
         } else {
-            $('.js-header').removeClass('fixed !mt-0 py-[32px] bg-gradient-to-r from-[#15333F] to-[#3E1238]').addClass('absolute');
+            $('.js-header').removeClass('fixed !mt-0 py-[33px] bg-gradient-to-r from-[#15333F] to-[#3E1238]').addClass('absolute');
             // $('.js-text-logo').removeClass('text-logo-anim');
             // $('.js-logo').removeClass('logo-anim');
             // $('.js-text-logo').removeClass('text-logo-anim');

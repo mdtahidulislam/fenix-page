@@ -344,7 +344,7 @@
   font-size:clamp(2.2rem, 4vw, 3.125rem);
 }
 .section-text{
-  font-size:clamp(1.5rem, 3vw, 2.25rem);
+  font-size:clamp(1.15rem, 3vw, 1.4rem);
 }
 @media (max-width: 1278px) {
   .home-shape-1 {

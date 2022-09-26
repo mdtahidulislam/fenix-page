@@ -819,7 +819,7 @@ video {
 }
 
 .section-text{
-  font-size:clamp(1.5rem, 3vw, 2.25rem);
+  font-size:clamp(1.15rem, 3vw, 1.4rem);
 }
 
 @media (max-width: 1278px) {
@@ -1313,16 +1313,16 @@ video {
   left: 0px;
 }
 
-.-top-\[6\.5vw\] {
-  top: -6.5vw;
+.-top-\[3\.5vw\] {
+  top: -3.5vw;
 }
 
 .right-0 {
   right: 0px;
 }
 
-.-top-\[53px\] {
-  top: -53px;
+.top-\[76px\] {
+  top: 76px;
 }
 
 .-bottom-\[22vw\] {
@@ -1351,6 +1351,10 @@ video {
 
 .bottom-0 {
   bottom: 0px;
+}
+
+.-top-\[6\.5vw\] {
+  top: -6.5vw;
 }
 
 .-bottom-\[2\.9vw\] {
@@ -1655,6 +1659,10 @@ video {
   max-width: 18.15vw;
 }
 
+.max-w-\[47\.2vw\] {
+  max-width: 47.2vw;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1795,16 +1803,16 @@ video {
   border-radius: 2.5rem;
 }
 
+.rounded-\[1\.2rem\] {
+  border-radius: 1.2rem;
+}
+
 .rounded-\[30px\] {
   border-radius: 30px;
 }
 
 .rounded-lg {
   border-radius: 0.5rem;
-}
-
-.rounded-\[1\.2rem\] {
-  border-radius: 1.2rem;
 }
 
 .rounded-l-lg {
@@ -2099,9 +2107,9 @@ video {
   padding-right: 4.688vw;
 }
 
-.py-\[200px\] {
-  padding-top: 200px;
-  padding-bottom: 200px;
+.py-\[83px\] {
+  padding-top: 83px;
+  padding-bottom: 83px;
 }
 
 .px-\[25px\] {
@@ -2154,6 +2162,11 @@ video {
   padding-bottom: 15px;
 }
 
+.py-\[200px\] {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -2179,9 +2192,9 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-\[32px\] {
-  padding-top: 32px;
-  padding-bottom: 32px;
+.py-\[33px\] {
+  padding-top: 33px;
+  padding-bottom: 33px;
 }
 
 .pt-\[311px\] {
@@ -2190,6 +2203,14 @@ video {
 
 .pb-\[12px\] {
   padding-bottom: 12px;
+}
+
+.pt-\[370px\] {
+  padding-top: 370px;
+}
+
+.pb-\[200px\] {
+  padding-bottom: 200px;
 }
 
 .pt-\[100px\] {
@@ -2230,14 +2251,6 @@ video {
 
 .pt-2 {
   padding-top: 0.5rem;
-}
-
-.pt-\[370px\] {
-  padding-top: 370px;
-}
-
-.pb-\[200px\] {
-  padding-bottom: 200px;
 }
 
 .text-center {
@@ -2871,6 +2884,10 @@ video {
 
   .fourksm\:-top-\[4vw\] {
     top: -4vw;
+  }
+
+  .fourksm\:-top-\[2vw\] {
+    top: -2vw;
   }
 
   .fourksm\:mr-0 {
